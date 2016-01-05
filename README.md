@@ -1,5 +1,7 @@
 # emoji.yml
 
+[![Build Status](https://travis-ci.org/siddharthist/emoji.yml.svg)](https://travis-ci.org/siddharthist/emoji.yml)
+
 ## description
 emoji.yml is a machine-readable (yaml) list of (almost) all unicode emoji
 characters, along with their names and hex codes.
