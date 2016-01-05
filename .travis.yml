@@ -1,3 +1,6 @@
 language: haskell
+install:
+  - cabal sandbox init
+  - cabal install --only-dependencies -v3
 script:
   - cabal run
