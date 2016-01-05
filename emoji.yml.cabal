@@ -11,7 +11,7 @@ cabal-version:       >=1.10
 
 executable emoji.yml
   main-is:             Main.hs
-  build-depends:       base >=4.6 && <4.9,
+  build-depends:       base >=4.8 && <4.9,
                        base-unicode-symbols,
                        xml-conduit > 1.3 && < 2.0,
                        data-default > 0.5 && < 1.0,
