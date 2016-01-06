@@ -16,5 +16,9 @@ addons:
 before_install:
   - export PATH=/opt/ghc/$GHCVER/bin:/opt/cabal/$CABALVER/bin:$PATH
 
+install:
+  - cabal update
+  - cabal install --only-dependencies
+
 script:
   - cabal run
