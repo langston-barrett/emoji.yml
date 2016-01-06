@@ -1,4 +1,21 @@
-language: haskell
-ghc: 7.10
+language: c
+sudo: false
+
+# Attempt to install GHC v7.10
+env:
+  - CABALVER=1.22
+  - GHCVER=7.10.1
+
+addons:
+  apt:
+    sources:
+      - hvr-ghc
+    packages:
+      - cabal-install-1.22
+      - ghc-7.10.1
+
+before_install:
+  - export PATH=/opt/ghc/$GHCVER/bin:/opt/cabal/$CABALVER/bin:$PATH
+
 script:
   - cabal run
